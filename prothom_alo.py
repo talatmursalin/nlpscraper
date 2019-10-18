@@ -13,9 +13,6 @@ class ProthomAlo(basespider.BaseSpider):
     def get_base_url(self):
         return self.base_url
 
-    def is_base_url(self):
-        return False
-
     def get_url_prefix_patt(self):
         return self.prefix_patt
 
