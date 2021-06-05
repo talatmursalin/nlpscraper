@@ -1,2 +1,3 @@
 # nlpscraper
-scraps news sites for texts
+News site article scraper
+

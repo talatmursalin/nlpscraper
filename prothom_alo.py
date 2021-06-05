@@ -8,7 +8,7 @@ class ProthomAlo(basespider.BaseSpider):
         super(ProthomAlo, self).__init__(*args, **kwargs)
         self.prefix_patt = "https://www.prothomalo.com"
         self.base_url = "https://www.prothomalo.com"
-        self.article_file_path = "/home/talat/Desktop/article"
+        self.article_file_path = "article"
 
     def get_base_url(self):
         return self.base_url
@@ -17,7 +17,7 @@ class ProthomAlo(basespider.BaseSpider):
         return self.prefix_patt
 
     def get_article_selector(self):
-        return "div > article > div"
+        return "div .story-element-text"
 
     def save_article(self, text):
         hash_object = hashlib.sha256(text.encode())
