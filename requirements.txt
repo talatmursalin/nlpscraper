@@ -1,2 +1,2 @@
 bs4
-scrapy==2.6.2
+scrapy==2.11.1
